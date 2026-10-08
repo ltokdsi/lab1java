@@ -325,10 +325,18 @@ public class Lab1 {
                     break;
                 case 11:
                     int x11 = lab.readInt("Введите число x: ");
+                    while (x11 < 0) {
+                        System.out.println("Число х должно быть неотрицательным!");
+                        x11 = lab.readInt("Попробуйте еще раз: ");
+                    }
                     System.out.println("Ответ: " + lab.reverseListNums(x11));
                     break;
                 case 12:
                     int x12 = lab.readInt("Введите число x: ");
+                    while (x12 < 0) {
+                        System.out.println("Число х должно быть неотрицательным!");
+                        x12 = lab.readInt("Попробуйте еще раз: ");
+                    }
                     System.out.println("Четные числа: " + lab.chet(x12));
                     break;
                 case 13:
@@ -366,8 +374,8 @@ public class Lab1 {
                     int val18 = lab.readInt("Введите добавляемое число: ");
                     int pos18 = lab.readInt("Введите позицию для вставки (0.." + arr18.length + "): ");
                     while (pos18 < 0 || pos18 > arr18.length) {
-                        System.out.println("Некорректная позиция!");
-                        pos18 = lab.readInt("Введите позицию заново (0.." + arr18.length + "): ");
+                        System.out.println("Позиция должна быть от 0 до " + arr18.length + ".");
+                        pos18 = lab.readInt("Попробуйте еще раз: ");
                     }
                     System.out.println("Новый массив: " + Arrays.toString(lab.add(arr18, val18, pos18)));
                     break;
