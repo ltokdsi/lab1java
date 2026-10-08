@@ -337,10 +337,18 @@ public class Lab1 {
                     break;
                 case 14:
                     int h14 = lab.readInt("Введите высоту: ");
+                    while (h14 <= 0) {
+                        System.out.println("Высота должна быть больше 0!");
+                        h14 = lab.readInt("Введите высоту теугольника заново: ");
+                    }
                     lab.leftTriangle(h14);
                     break;
                 case 15:
                     int h15 = lab.readInt("Введите высоту: ");
+                    while (h15 <= 0) {
+                        System.out.println("Высота должна быть больше 0!");
+                        h15 = lab.readInt("Введите высоту теугольника заново: ");
+                    }
                     lab.rightTriangle(h15);
                     break;
                 case 16:
