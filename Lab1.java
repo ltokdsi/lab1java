@@ -243,7 +243,7 @@ public class Lab1 {
             System.out.println(" 2. Задача 1.4 (Есть ли позитив)");
             System.out.println(" 3. Задача 1.6 (Большая буква)");
             System.out.println(" 4. Задача 1.8 (Делитель)");
-            System.out.println(" 5. Задача 1.10 (Многократный вызов");
+            System.out.println(" 5. Задача 1.10 (Многократный вызов)");
             System.out.println();
             System.out.println("ЗАДАНИЕ 2. УСЛОВИЯ");
             System.out.println(" 6. Задача 2.1 (Модуль числа)");
